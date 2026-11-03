@@ -1,0 +1,76 @@
+{
+  "started_at": "2026-11-03T00:45:53.158686+00:00",
+  "ended_at": "2026-11-03T00:57:49.460026+00:00",
+  "elapsed_seconds": 755.7071365230004,
+  "command": [
+    "tasks/public-steam-pilot-2026-10-27/retrieval/run.py",
+    "--queries",
+    "tasks/evaluation60-2026-11-02/prepared/queries.json",
+    "--candidates",
+    "tasks/evaluation60-2026-11-02/prepared/candidates.jsonl",
+    "--output",
+    "tasks/evaluation60-2026-11-02/retrieval/results",
+    "--model-path",
+    "tasks/public-steam-pilot-2026-10-27/retrieval/model-cache/models--sentence-transformers--all-MiniLM-L6-v2/snapshots/1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  ],
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "2.5.4",
+    "torch": "2.14.1+cpu",
+    "rank-bm25": "0.2.2",
+    "sentence-transformers": "5.1.1",
+    "transformers": "4.57.6",
+    "scikit-learn": "1.9.1",
+    "huggingface-hub": "0.36.2"
+  },
+  "input_hashes": {
+    "tasks/evaluation60-2026-11-02/prepared/queries.json": "9e80c048164aea95a8d3d478a8a0b740b1ea485ad2d88a1e212fb254585d517b",
+    "tasks/evaluation60-2026-11-02/prepared/candidates.jsonl": "9f608b2dc573e022f4c2d34c8bd0b45f9a6f72cbe2c64cad41bd8ef20d0c92eb"
+  },
+  "script_sha256": "59c96bed803b05dd3be33735e50b2cd9025c885ae4fe5d54568315297d7d03ef",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "model_files_sha256": {
+    "config.json": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+    "sentence_bert_config.json": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7",
+    "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+    "tokenizer_config.json": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+    "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "README.md": "dcd602d2fd35c203a247304a06fec6654a12f7941b739f9221a064fe8dc3b7f0",
+    "model.safetensors": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+    "config_sentence_transformers.json": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3",
+    "data_config.json": "32edcb108fc2516b920734a862ae0692bcae1c5d45d5f8d972cb0d53434a4c54",
+    "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+    "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+    "1_Pooling/config.json": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23"
+  },
+  "methods": [
+    "bm25",
+    "semantic",
+    "rrf"
+  ],
+  "query_count": 60,
+  "candidate_pairs": 39944,
+  "bm25": {
+    "k1": 1.5,
+    "b": 0.75,
+    "epsilon": 0.25,
+    "tokenization": "Unicode lowercase \\w+"
+  },
+  "semantic": {
+    "window": 254,
+    "overlap": 32,
+    "aggregation": "max cosine",
+    "query_truncation": false,
+    "review_truncation": false
+  },
+  "rrf_k": 60,
+  "tie_break": "score descending then record_id lexical ascending",
+  "limitations": [
+    "Development retrieval only; no human labels or quality metrics",
+    "Longer reviews have more maximum-score opportunities",
+    "RRF retains zero/nonpositive BM25 ranks; ties lexical, not relevance",
+    "Day-only public dates; edit times and patch exposure unknown"
+  ]
+}

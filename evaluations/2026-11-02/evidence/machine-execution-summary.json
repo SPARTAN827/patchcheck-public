@@ -1,0 +1,14 @@
+{
+  "actual_model": "openai/gpt-6-astra",
+  "runtime": "Native Codex isolated subagents; exact model snapshot and sampling parameters not exposed",
+  "started_at_utc": "2026-11-03T00:58:16+00:00",
+  "completed_at_utc": "2026-11-03T01:12:06+00:00",
+  "prompt_sha256": "e5fa7b85fdce7bb69c3ec4cefae189562d621e435dbd694f33652d7c8eb2f0e3",
+  "saved_assessment_batches": 97,
+  "exact_underlying_model_request_count": null,
+  "model_request_count_note": "Native backend request count not exposed;97savedbatches must not be reported as97APIcalls.",
+  "machine_pair_judgments": 2899,
+  "human_reference_judgments_received": 0,
+  "source_provenance_sha256": "7ba0f006cd196031d5fabbf9cf7840db39ec22c781d24839581e7cc9c6d6d1bc",
+  "publication_note": "Reviewer-safe execution summary derived from the saved provenance. Predictions, per-pair method membership, scores, ranks, and internal execution identifiers are not included. This does not establish human matching accuracy."
+}

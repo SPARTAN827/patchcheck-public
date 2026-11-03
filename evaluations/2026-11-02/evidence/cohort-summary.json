@@ -1,0 +1,56 @@
+{
+  "created_at_utc": "2026-11-03T00:51:53.089501+00:00",
+  "unit": "60 frozen game/query pools; candidate texts are not human labels",
+  "queries": 60,
+  "distributions": {
+    "raw_rows": {
+      "n": 60,
+      "total": 657375,
+      "minimum": 710,
+      "q1": 3141.5,
+      "median": 5244.0,
+      "q3": 11867.75,
+      "maximum": 67535,
+      "mean": 10956.25,
+      "sample_sd": 14124.9192403571
+    },
+    "english_screened_rows": {
+      "n": 60,
+      "total": 303692,
+      "minimum": 182,
+      "q1": 1510.0,
+      "median": 2202.5,
+      "q3": 4745.0,
+      "maximum": 33483,
+      "mean": 5061.533333333334,
+      "sample_sd": 6978.675437593931
+    },
+    "window_unique_candidates": {
+      "n": 60,
+      "total": 39944,
+      "minimum": 22,
+      "q1": 113.75,
+      "median": 253.5,
+      "q3": 624.25,
+      "maximum": 10427,
+      "mean": 665.7333333333333,
+      "sample_sd": 1450.2799947861226
+    }
+  },
+  "human_judgments_received": 0,
+  "input_sha256": {
+    "tasks/evaluation60-2026-11-02/prepared/queries.json": "9e80c048164aea95a8d3d478a8a0b740b1ea485ad2d88a1e212fb254585d517b",
+    "tasks/evaluation60-2026-11-02/prepared/query-pools.json": "236e303f7675e97f9c929c58910c259b3a191a6b72d2012152bd9012c638adbc",
+    "tasks/evaluation60-2026-11-02/prepared/candidates.jsonl": "9f608b2dc573e022f4c2d34c8bd0b45f9a6f72cbe2c64cad41bd8ef20d0c92eb"
+  },
+  "script_sha256": "3cdbce10f12c1ae8490290e349c06552caadc5780c5d10335b72a6e4f601c49c",
+  "limitations": [
+    "Language is model-screened, not human certified.",
+    "Window and deduplication counts describe eligibility, not relevance or matching accuracy.",
+    "Expansion cohort is separate from the original100-game corpus."
+  ],
+  "public_derivative": {
+    "change": "Three provenance path keys are project-relative; all measurements are unchanged.",
+    "original_sha256": "83394a62cfa2eed3e9228123755e4f61d1f6325422c99aa2f1e822517f01ffa9"
+  }
+}

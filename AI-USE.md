@@ -1,0 +1,3 @@
+# AI disclosure
+
+OpenAI Codex through OpenClaw was used for source screening, code development and analysis checks and revision for this report. In the experiment, Codex (recorded runtime: openai/gpt-6-astra) assessed 2,899 full fix-statement/review pairs using a frozen prompt that separately classified issue identity and reported experience; only "yes" and "ongoing" predictions entered the context method's results. As detailed under Labeling, 105 earlier responses were initially Codex-generated and later human-confirmed, while the 306-pair final round involved human review followed by an AI recheck. We also used Claude for this report as it helped us polish and fix errors in our rough draft so that it would read and flow better.

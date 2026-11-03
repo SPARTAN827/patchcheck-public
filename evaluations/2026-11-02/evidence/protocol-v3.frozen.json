@@ -1,0 +1,243 @@
+{
+  "protocol_id": "PatchCheck-E60-2026-11-02-v3",
+  "status": "frozen_before_new_rankings",
+  "purpose": "Evaluate four retrieval/display pipelines on new eligible game/fix-query units, using subsequent human reference judgments",
+  "sampling": {
+    "target_games": 60,
+    "unit": "One preselected official fix query per distinct game; do not treat individual texts or duplicate ratings as independent experimental units",
+    "sampling_frame": "Nonexhaustive archived source-lead frame: existing fixes.csv extracted claim spans, restricted by the recorded action-verb/symptom filter in source-inventory/build_inventory.py, joined to obtainable public Steam review archive members. This is not all sentences in all official announcements. Preserve source-claim-leads.json and candidate-member-manifest.json hashes and attempted-game eligibility ledger.",
+    "game_order": "Ascending hexadecimal SHA256 of UTF-8 string PatchCheck-E60-2026-11-02|<appid>; lexical appid breaks hypothetical hash ties",
+    "query_choice": "Within each game, consider only leads in the frozen nonexhaustive extraction frame. Sort these by published_at UTC ascending, source_url lexical, source_snapshot_id lexical, then body offset. Select the earliest source-qualified specific lead with at least20 eligible90-day reviews. Earliest means earliest qualifying extracted lead, not earliest possible official fix claim. Preserve earlier rejections/holds and choose independently of retrieval outputs or relevance labels.",
+    "claim_scope": "Explicit specific PC crash, freeze, stutter, or performance fix with enough affected-feature/trigger detail for a claim-review judgment; a generic statement such as various bugs fixed is ineligible. Current official text and authority must be verified; archival presence and historical edit status remain separate fields.",
+    "source_verification": "Record authoritative publisher/developer announcement URL, publication time, verbatim contiguous claim, saved body hash and claim body offset. Verify current source authority/text before rankings; record unavailable sources as unverified/ineligible, not as verified historical records.",
+    "archive_member_limit_uncompressed_bytes": 50000000,
+    "archive_limit_reason": "Pre-result resource feasibility cap of50,000,000 decimal bytes, matching frozen inventory/acquisition implementation; not50MiB and not a relevance criterion.",
+    "minimum_eligible_reviews": 20,
+    "maximum_eligible_reviews": null,
+    "review_window": "Creation date strictly after announcement UTC calendar date through day+90 inclusive; exclude same-day records because source review dates may be day-only",
+    "english_rule": "fastText lid.176 top-label __label__en and score>=0.80; model-screened, not human-certified language",
+    "deduplication": "For each candidate query, first apply its strictly-post-publication-day through90-day date window and English/nonempty screening. Then deduplicate exact full text within that eligible query window, retaining the lowest original source row among eligible duplicates. Do not globally discard an eligible in-window text because an identical out-of-window row appeared earlier; record all exclusions.",
+    "development_game_exclusions": [
+      "275850",
+      "292000",
+      "315210",
+      "351030",
+      "491540",
+      "529340",
+      "534380",
+      "553850",
+      "611500",
+      "625960",
+      "671970",
+      "754890",
+      "899770",
+      "949230",
+      "954850",
+      "983870",
+      "997010",
+      "1016950",
+      "1142710",
+      "1149460",
+      "1151340",
+      "1170950",
+      "1171690",
+      "1249970",
+      "1266540",
+      "1272080",
+      "1277920",
+      "1295660",
+      "1307550",
+      "1361210",
+      "1468810",
+      "1476970",
+      "1501750",
+      "1601580",
+      "1644320",
+      "1677280",
+      "1708850",
+      "1716740",
+      "1874880",
+      "1888930",
+      "1895130",
+      "1898300",
+      "1931180",
+      "1940340",
+      "1963370",
+      "2064870",
+      "2104890",
+      "2246340",
+      "2307350",
+      "2313330",
+      "2336220",
+      "2380050",
+      "2399830",
+      "2406770",
+      "2427410",
+      "2456740",
+      "2457220",
+      "2479810",
+      "2680550",
+      "2688950",
+      "2828860",
+      "3058630"
+    ],
+    "exclusion_source": "development-exclusions.frozen.json",
+    "exposure_limit": "Conservative union of known prior query/retrieval/released-case/pretest games and the complete prior41 selected-game case roster. New means not in these prior evaluation/development/selected-case games, not never inspected or absent from pretraining. Archived source-only leads can be used with exposure disclosed. Before rankings, exclude known near-duplicate editions/identical fixes via source-frame family ledger; unresolved family dependence must be reported.",
+    "stopping": "Take first 60 eligible independent games in fixed order; if frame yields fewer, stop with explicit below-target count rather than repeat games, broaden window or substitute favorable results. No replacements after ranking or labels. Any necessary changes become dated pre-result amendments, never silent edits.",
+    "game_metadata_eligibility": "Eligible app must be a game, supported by source content and metadata; reject non-game software/utilities, including VEGASPro18Edit1325400, DSX1812620, Animaze1364390, and MyDockFinder1787090, even if archived under Game Reviews. This known list is not exhaustive. Acquisition may contain them, but final evaluation cannot. Ambiguous app type remains held.",
+    "excluded_non_game_appids": [
+      "1325400",
+      "1812620",
+      "1364390",
+      "1787090"
+    ]
+  },
+  "baselines": {
+    "bm25": {
+      "k1": 1.5,
+      "b": 0.75,
+      "epsilon": 0.25,
+      "tokenization": "Unicode lowercase \\w+",
+      "display_k": 10
+    },
+    "semantic": {
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "chunk_content_tokens": 254,
+      "overlap_tokens": 32,
+      "aggregation": "maximum cosine over all chunks",
+      "display_k": 10,
+      "query_truncation": false,
+      "review_truncation": false
+    },
+    "rrf": {
+      "k": 60,
+      "components": [
+        "bm25",
+        "semantic"
+      ],
+      "display_k": 10
+    },
+    "tie_break": "Score descending, then record_id lexical ascending",
+    "pools": "Identical fixed eligible candidate pool for all four arms"
+  },
+  "context_arm": {
+    "name": "rrf_context",
+    "rrf_prefix": 50,
+    "assessed_count": "min(50, eligible candidate pool size)",
+    "input": "Full official claim and full review text; hide method/rank/score and reorder by deterministic case-ID hash",
+    "assessor": "One actual native AI assessment per pair using frozen context-assessor-prompt.txt and context-output.schema.json; record actual runtime model/settings and every execution reference before compilation",
+    "actual_model": "openai/gpt-6-astra",
+    "runtime": "Native Codex subagents inherited current runtime model; exact underlying snapshot/backend settings not exposed. Record actual task execution references and timestamps for each batch.",
+    "prompt_sha256": "e5fa7b85fdce7bb69c3ec4cefae189562d621e435dbd694f33652d7c8eb2f0e3",
+    "schema_sha256": "7c0e9a60d9c13c5206b9522fcd2f20d402aa62e20f4e41e2e8f847c5ffd9e4d1",
+    "selection": "Retain same_specific_issue=yes AND reported_experience=ongoing; take up to10 in original RRF order. No fallback filling and no re-prompting for favorable outcomes.",
+    "malformed_output": "Preserve first raw response. Repair only JSON/ID/quote-format validity in a documented same-prompt correction; never alter substantive decisions after viewing human labels. Unresolved invalid outputs stop compilation; do not silently drop queries.",
+    "cost": "Report actual scanned counts, calls and elapsed runtime; equal display budget does not imply equal compute",
+    "not_human_reference": true
+  },
+  "human_reference": {
+    "population": "Deduplicated union of displayed outputs from all four arms, not every review in the corpus or all50 scanned texts",
+    "initial_ratings_per_pair": 2,
+    "available_reviewers": 4,
+    "assignment": "Balance pairs over the six unordered reviewer pairs AB,AC,AD,BC,BD,CD. Each text is assigned to two distinct readers; four disjoint parts with one reader each would not give double annotation.",
+    "presentation": "Hide machine predictions, method membership, rank and score; randomize presentation deterministically and record actual prior exposure. Do not call reviewers blinded if they have seen labels.",
+    "rules": "Same-specific-issue yes/no/uncertain separately from ongoing/improved_or_absent/historical/mixed/unclear/not_applicable, using full evidence and concise actual human reasons",
+    "adjudication": "Preserve both first responses. If either dimension differs, resolve by recorded discussion of evidence, preferably with an otherwise unassigned reviewer; if agreement cannot be reached retain uncertain same-issue or unclear experience. Record final provenance and never replace unresolved uncertainty with an AI decision.",
+    "missing_ratings": "Return pending; primary query-level analysis uses only queries with the full displayed union double-rated and adjudication resolved or explicitly uncertain. Report incomplete games and reasons; do not replace them. Missingness may bias complete-case results.",
+    "training": "Use current59-pair development material for instruction/timing; exclude its five games and any subsequently tuned game from the new cohort"
+  },
+  "primary_analysis": {
+    "contrast": "rrf_context minus rrf",
+    "outcome": "Confirmed ongoing same-specific-issue yield@10 = displayed human-confirmed yes AND ongoing count /10; empty slots contribute0 confirmed evidence",
+    "uncertain_policy": "Uncertain/unclear/mixed/not-established outcomes contribute no confirmed evidence but remain uncertainty, not known negatives. Publish counts and a separately labeled upper-bound sensitivity where unresolved potentially-target items are counted as possible positives.",
+    "unit": "One paired difference per independent game/query, all equally weighted",
+    "estimand": "Mean within-game difference in confirmed evidence yield on selected eligible snapshot-text query frame",
+    "effect_reporting": "Mean difference, percentage points, and extra confirmed items per ten; include per-query differences and win/tie/loss counts",
+    "alpha": 0.05,
+    "test": "Two-sided paired sign-flip test on sum/mean differences. Enumerate all2^m nonzero signs when m<=20; otherwise100000 Monte Carlo sign vectors, fixed seed20261102, p=(1+extreme)/(1+B). Include zero differences in reported n but their signs need not be enumerated. This is an observational method comparison; exactness requires sign-exchangeability/symmetry under the null, not an actual randomized treatment assignment.",
+    "confidence_interval": "95% percentile paired game bootstrap of the mean difference,100000 resamples, fixed seed20261103. Resample whole games and both method outputs together. Record discreteness/skewness/small-n limitations; do not bootstrap individual texts or ratings.",
+    "degenerate_behavior": "If all differences are zero, report effect0 and sign-flip p=1, show raw bootstrap [0,0] only as a degenerate empirical interval, not as evidence of equivalence. Also show a conservative bounded-mean interval mean +/-sqrt(2*log(40)/n), clipped to[-1,1], under independent bounded game-unit sampling assumptions. If all differences are identical nonzero, retain sign-flip test but likewise flag degenerate bootstrap and provide bounded interval. No equivalence or minimum-effect conclusion follows.",
+    "generalization": "Fixed-order convenience source frame, not a probability sample of all games or players. CI/test require defensible independent game units and stated model assumptions; results cannot establish repair causality. If near-duplicate family dependence remains, report family-clustered sensitivity rather than claiming60 independent games."
+  },
+  "secondary_analysis": [
+    "Descriptive macro outcomes for BM25/semantic/RRF/context and same-specific-issue yield@10 alone",
+    "Uncertain counts, returned counts, full abstention fraction and scanned/model-cost counts",
+    "At k_q=context output size, compare context against first k_q RRF outputs: confirmed non-target and unresolved counts separately; k_q=0 precision/error undefined, not perfect",
+    "No new confirmatory uncorrected tests for secondary methods; label as descriptive/exploratory and predeclare multiplicity adjustment if adding inferential contrasts",
+    "Initial human category distributions, actual agreement/disagreement and adjudication; AI agreement is not accuracy",
+    "No recall from displayed union, no whole-corpus prevalence from selected outputs, and no causal repair effectiveness"
+  ],
+  "power": {
+    "status": "Conditional planning sensitivity, not evidence of adequate realized power",
+    "target_mean_difference": 0.1,
+    "alpha": 0.05,
+    "target_power": 0.8,
+    "assumed_paired_difference_sd": [
+      0.15,
+      0.2,
+      0.25
+    ],
+    "paired_t_approximation_required_games": [
+      20,
+      34,
+      52
+    ],
+    "limitations": "SDs not estimated from human labels. Paired-t planning is approximate for the prespecified sign-flip/bootstrap analysis and bounded zero-heavy outcomes.60 is a resource target, not a guaranteed significant result. New-source feasibility is unresolved at draft time."
+  },
+  "disclosures": [
+    "All actual AI source qualification, pipeline context judgments, coding, analysis assistance and writing assistance must be disclosed separately from genuine human reference decisions",
+    "Current source text plus publication time does not verify historical wording, deployment or patch exposure; snapshot text may have been edited",
+    "A60-game evaluation cohort does not silently replace the separate100-game corpus/qualified-case goal or imply course approval",
+    "This internal protocol is not public preregistration, external review, TA feedback, team sign-off or Canvas submission"
+  ],
+  "frozen_at_utc": "2026-11-03T00:40:29.143282+00:00",
+  "freeze_scope": "Design and development-game exclusions are frozen before any new rankings. Parent must separately freeze actual eligible source/query/candidate roster before running retrieval.60-game availability remains unestablished.",
+  "input_sha256": {
+    "tasks/evaluation60-2026-11-02/source-inventory/development-exclusions.json": "fd48d118dc8dad09483874c68e86cfc1e7aa58d5a73248b5eee3a1fda9cb5821",
+    "tasks/expansion-2026-10-19/handoff/results-2026-10-20/selected-games-41.csv": "6c72a870af3e78e59ebe33c863959e7897b57460c45f40d68b0c67ea1f0a66f4",
+    "tasks/evaluation60-2026-11-02/protocol/development-exclusions.frozen.json": "08de9f704c9ae924f2582997ce16490e4344e74f339c02e960cf80c40030439d"
+  },
+  "amends_protocol_sha256": "62b749af8a43764601fa1bdd032e509ce76c19ae0312751289d8f97baff23a6a",
+  "amendment": {
+    "time_utc": "2026-11-03T00:40:29.143282+00:00",
+    "timing": "Before any new retrieval rankings, model-context predictions or human outcomes; source acquisition/semantic verification are underway.",
+    "reason": "Independent pre-ranking QA identified unit/ordering ambiguity: actual source-frame implementation uses decimal50,000,000-byte archive cap, and query eligibility requires date/language filtering before exact-text deduplication. Additional utility apps were found in source metadata. Clarify those gates without using relevance or method outcomes.",
+    "changes": [
+      "Archive cap stated as50,000,000decimalbytes to match actualinventory",
+      "Date-window and language screening precede exact-text deduplication; lowest eligible source row retained",
+      "Knownnon-game utility exclusions expanded to1325400,1812620,1364390,1787090"
+    ],
+    "unchanged": [
+      "All62developmentgame exclusions",
+      "Nonexhaustive extractedleadframe and chronologicalselection",
+      "Target60,min20,90-daywindow",
+      "Fourmethods/contextprompt/model",
+      "Primaryoutcome/analysis/humanprocedure"
+    ]
+  },
+  "source_frame_sha256": {
+    "tasks/evaluation60-2026-11-02/source-inventory/source-claim-leads.json": "42d1ec4f73fe10e9adae7296703b4a9bb74272fee5c82cbf9a8c5d984aab3c79",
+    "tasks/evaluation60-2026-11-02/source-inventory/candidate-member-manifest.json": "2c867a55ca6a2cb40a1778b6246537727116b51939885c21855136890c45292a",
+    "tasks/evaluation60-2026-11-02/source-inventory/build_inventory.py": "08039f26de4ef37b282a9fc5a113c178ab4bcfccfab408b201f58e4009725d04"
+  },
+  "amendment_history": [
+    {
+      "time_utc": "2026-11-03T00:36:13.261204+00:00",
+      "timing": "Before any new retrieval rankings or human outcomes; source-only semantic inspection has begun.",
+      "reason": "Implementation audit found source lead inventory uses existing fixes.csv extraction plus action-verb/symptom filters; original design wording could incorrectly imply exhaustive inspection of all official claim sentences. A utility app was also discovered in the archive frame. Clarify scope and enforce game-only eligibility without choosing based on retrieval or labels.",
+      "changes": [
+        "Explicit nonexhaustive extracted-lead sampling frame",
+        "Earliest qualifying lead within frame, not earliest possible official claim",
+        "Game-only source/metadata gate; knownutility1325400 excluded"
+      ],
+      "unchanged": [
+        "Target60games",
+        "All62development/selectedcase exclusions",
+        "Eligibility20Englishunique90-dayreviews;50MBarchivecap",
+        "Four methods/contextprompt/model",
+        "Primaryoutcome/analysis/humanprocedure"
+      ]
+    }
+  ]
+}

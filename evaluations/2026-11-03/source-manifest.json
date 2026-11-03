@@ -1,0 +1,202 @@
+{
+  "status": "privacy-minimized analysis handoff; not a complete acquisition/model replay archive",
+  "cutoffs": {
+    "model_output_freeze_utc": "2026-11-03T01:32:21Z",
+    "label_intake_utc": "2026-11-03T09:26:20Z",
+    "procedure_attestation_recorded_utc": "2026-11-03T09:48Z"
+  },
+  "excluded": [
+    "Personal assistant state and Git history",
+    "Private conversational receipt and navigation-before snapshots",
+    "Original returned workbooks containing reviewer identities and freeform provenance",
+    "Installed runtimes and model caches",
+    "Full new raw-review archives and source captures",
+    "Per-pair context model reasoning outside displayed union"
+  ],
+  "records": [
+    {
+      "path": "evaluations/2026-11-03/inputs/reference-codes.csv",
+      "bytes": 176800,
+      "sha256": "a14a0887aa124e1a643d36df4d1ec973e7c8920754d7fbac59934dcc1b56a33c",
+      "treatment": "Code-only derivative of current reference; labels unchanged; freeform reasons and private receipt references omitted",
+      "source_path": "tasks/evaluation60-results-2026-11-03/provenance-confirmation-2026-11-03/current-reference-projection-1215.csv",
+      "source_sha256": "4822201b55cf1e620be9b07804da086be914f81a34e9b0a835fcaa1ccf0cf175"
+    },
+    {
+      "path": "evaluations/2026-11-03/inputs/queries.json",
+      "bytes": 19928,
+      "sha256": "b27f0d47da97ea366ed1cb151e4df708b6daaaf4a686a9644d4bfe53f1aaffd4",
+      "treatment": "Minimal query/source derivative; exact selected fields retained; full capture/provenance remains local",
+      "source_path": "tasks/evaluation60-2026-11-02/prepared/queries.json",
+      "source_sha256": "9e80c048164aea95a8d3d478a8a0b740b1ea485ad2d88a1e212fb254585d517b"
+    },
+    {
+      "path": "evaluations/2026-11-03/inputs/method-rankings.json",
+      "bytes": 355875,
+      "sha256": "775a4564a1c4f064677e8977e45de60321272b706891bc6b3a57bc5146ea2daf",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-2026-11-02/compiled/private-all-method-lists.json",
+      "source_sha256": "775a4564a1c4f064677e8977e45de60321272b706891bc6b3a57bc5146ea2daf"
+    },
+    {
+      "path": "evaluations/2026-11-03/results/method-summary.csv",
+      "bytes": 1689,
+      "sha256": "2c019700fe94bb9512315a1160aff9cc8091061322b08fef805565c9ddee8121",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-results-2026-11-03/reference-analysis-2026-11-03/method-summary.csv",
+      "source_sha256": "2c019700fe94bb9512315a1160aff9cc8091061322b08fef805565c9ddee8121"
+    },
+    {
+      "path": "evaluations/2026-11-03/results/per-query-method.csv",
+      "bytes": 38300,
+      "sha256": "9aa265524f4582ba81a93b6871c69e21c48211ac95013a62523380ca85477ab6",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-results-2026-11-03/reference-analysis-2026-11-03/per-query-method.csv",
+      "source_sha256": "9aa265524f4582ba81a93b6871c69e21c48211ac95013a62523380ca85477ab6"
+    },
+    {
+      "path": "evaluations/2026-11-03/results/primary-query-differences.csv",
+      "bytes": 6440,
+      "sha256": "fe1a8e0d740ba057c322f33500c06a42c07643fa0f0fc474c67a2c844487b7b3",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-results-2026-11-03/reference-analysis-2026-11-03/primary-query-differences.csv",
+      "source_sha256": "fe1a8e0d740ba057c322f33500c06a42c07643fa0f0fc474c67a2c844487b7b3"
+    },
+    {
+      "path": "evaluations/2026-11-03/results/shared-pair-uncertainty-bounds.csv",
+      "bytes": 10871,
+      "sha256": "76f6374575665d62fddd3014e16bb76473bef766c73db5eda2d7dd6d8a410a5c",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-results-2026-11-03/reference-analysis-2026-11-03/shared-pair-uncertainty-bounds.csv",
+      "source_sha256": "76f6374575665d62fddd3014e16bb76473bef766c73db5eda2d7dd6d8a410a5c"
+    },
+    {
+      "path": "evaluations/2026-11-03/results/matched-k-query-counts.csv",
+      "bytes": 7943,
+      "sha256": "dde1d2fee4880c7c0751cfe5be5d79bdcc4637211210ca15614305f037f8d10e",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-results-2026-11-03/reference-analysis-2026-11-03/matched-k-query-counts.csv",
+      "source_sha256": "dde1d2fee4880c7c0751cfe5be5d79bdcc4637211210ca15614305f037f8d10e"
+    },
+    {
+      "path": "evaluations/2026-11-03/source/frozen_analyze_reference.py",
+      "bytes": 25392,
+      "sha256": "bdd5b81b3dd4a1388e54a76d7fdd9e72036224581d914f9f42b444cf05c01ab0",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-results-2026-11-03/reference-analysis-2026-11-03/analyze_reference.py",
+      "source_sha256": "bdd5b81b3dd4a1388e54a76d7fdd9e72036224581d914f9f42b444cf05c01ab0"
+    },
+    {
+      "path": "evaluations/2026-11-03/results/original-primary-conditional-inference.json",
+      "bytes": 2692,
+      "sha256": "5d63c0760df9866e8f36687a8f30026a6408b488df7463711be0696a2e3fc794",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-results-2026-11-03/reference-analysis-2026-11-03/primary-conditional-inference.json",
+      "source_sha256": "5d63c0760df9866e8f36687a8f30026a6408b488df7463711be0696a2e3fc794"
+    },
+    {
+      "path": "evaluations/2026-11-03/results/original-sensitivity-summary.json",
+      "bytes": 5756,
+      "sha256": "fb4551a887fd5cc42bf2bf6791124906f65a49bac7b2302beab81e0c1f7fdbf0",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-results-2026-11-03/reference-analysis-2026-11-03/sensitivity-summary.json",
+      "source_sha256": "fb4551a887fd5cc42bf2bf6791124906f65a49bac7b2302beab81e0c1f7fdbf0"
+    },
+    {
+      "path": "evaluations/2026-11-03/results/original-matched-k-summary.json",
+      "bytes": 3517,
+      "sha256": "914c3f1364560d392bd666ffe353972c4fc1f18c6a70a86525b91aa326a14e34",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-results-2026-11-03/reference-analysis-2026-11-03/matched-k-summary.json",
+      "source_sha256": "914c3f1364560d392bd666ffe353972c4fc1f18c6a70a86525b91aa326a14e34"
+    },
+    {
+      "path": "evaluations/2026-11-03/source/retrieval-metadata.json",
+      "bytes": 3394,
+      "sha256": "d6fc6868321f9ab03d6d5c7ad14510e8e849e97ac606923bdc42e866beaed51d",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-2026-11-02/retrieval/results/metadata.json",
+      "source_sha256": "d6fc6868321f9ab03d6d5c7ad14510e8e849e97ac606923bdc42e866beaed51d"
+    },
+    {
+      "path": "evaluations/2026-11-03/source/retrieval-run.py",
+      "bytes": 8343,
+      "sha256": "59c96bed803b05dd3be33735e50b2cd9025c885ae4fe5d54568315297d7d03ef",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/public-steam-pilot-2026-10-27/retrieval/run.py",
+      "source_sha256": "59c96bed803b05dd3be33735e50b2cd9025c885ae4fe5d54568315297d7d03ef"
+    },
+    {
+      "path": "evaluations/2026-11-03/source/acquire_reviews.py",
+      "bytes": 4400,
+      "sha256": "b18477d7a3b785521496a9a49f93ef5e4c075790dfa2588ef040115f5cd7d118",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-2026-11-02/acquire_reviews.py",
+      "source_sha256": "b18477d7a3b785521496a9a49f93ef5e4c075790dfa2588ef040115f5cd7d118"
+    },
+    {
+      "path": "evaluations/2026-11-03/source/freeze_inputs.py",
+      "bytes": 5456,
+      "sha256": "555829ee914bf78f101664b4779a66875d0ebcefc14ba64506366cec459bdf4b",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-2026-11-02/freeze_inputs.py",
+      "source_sha256": "555829ee914bf78f101664b4779a66875d0ebcefc14ba64506366cec459bdf4b"
+    },
+    {
+      "path": "evaluations/2026-11-03/source/screen_reviews.py",
+      "bytes": 4709,
+      "sha256": "3c52f4fccf7d986ef2a3b3a4ce983047ab1276b4dbd2d00f54988adbcbd545a2",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-2026-11-02/screen_reviews.py",
+      "source_sha256": "3c52f4fccf7d986ef2a3b3a4ce983047ab1276b4dbd2d00f54988adbcbd545a2"
+    },
+    {
+      "path": "evaluations/2026-11-03/source/verify_sources.py",
+      "bytes": 10438,
+      "sha256": "ecb076896a1b87e07fe69e0aee65ebcaaeb3f203c166558666be38a0470ddfee",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-2026-11-02/verify_sources.py",
+      "source_sha256": "ecb076896a1b87e07fe69e0aee65ebcaaeb3f203c166558666be38a0470ddfee"
+    },
+    {
+      "path": "evaluations/2026-11-03/source/summarize_frozen_cohort.py",
+      "bytes": 2392,
+      "sha256": "3cdbce10f12c1ae8490290e349c06552caadc5780c5d10335b72a6e4f601c49c",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-2026-11-02/summarize_frozen_cohort.py",
+      "source_sha256": "3cdbce10f12c1ae8490290e349c06552caadc5780c5d10335b72a6e4f601c49c"
+    },
+    {
+      "path": "evaluations/2026-11-03/source/prepare_context.py",
+      "bytes": 9306,
+      "sha256": "56fa1d8eeb49dc051927d1ac644e2db1f89db8f2b69956900517ee38766f2aa2",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-2026-11-02/protocol/prepare_context.py",
+      "source_sha256": "56fa1d8eeb49dc051927d1ac644e2db1f89db8f2b69956900517ee38766f2aa2"
+    },
+    {
+      "path": "evaluations/2026-11-03/source/compile_context.py",
+      "bytes": 7801,
+      "sha256": "04e1745d1f61f7b9b53112a0c39e5c79dc59bf04450408dfbaac613c8cc3dc52",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-2026-11-02/protocol/compile_context.py",
+      "source_sha256": "04e1745d1f61f7b9b53112a0c39e5c79dc59bf04450408dfbaac613c8cc3dc52"
+    },
+    {
+      "path": "evaluations/2026-11-03/source/validate_context_batch.py",
+      "bytes": 1609,
+      "sha256": "74df11699297bf4684a8db34396d142152e96615dfad7eefb7ad96363594cdad",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-2026-11-02/protocol/validate_context_batch.py",
+      "source_sha256": "74df11699297bf4684a8db34396d142152e96615dfad7eefb7ad96363594cdad"
+    },
+    {
+      "path": "evaluations/2026-11-03/source/paired_inference.py",
+      "bytes": 3524,
+      "sha256": "843ec1e4ce49ed6f8bb02b0dea1426b4a83f144a01b56bd300c543711906caec",
+      "treatment": "Frozen source bytes preserved; source paths retain original meaning",
+      "source_path": "tasks/evaluation60-2026-11-02/protocol/paired_inference.py",
+      "source_sha256": "843ec1e4ce49ed6f8bb02b0dea1426b4a83f144a01b56bd300c543711906caec"
+    }
+  ]
+}

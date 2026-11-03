@@ -1,0 +1,482 @@
+[
+  {
+    "query_id": "E60-Q001",
+    "appid": "976590",
+    "game": "Bus Simulator 21 Next Stop",
+    "quote": "Improved performance in China Town area",
+    "published_at": "2021-09-10T12:38:04Z",
+    "source_url": "https://store.steampowered.com/news/app/976590/view/2941402621044857680"
+  },
+  {
+    "query_id": "E60-Q002",
+    "appid": "1622900",
+    "game": "Star Trek: Infinite",
+    "quote": "Fixed a crash occurring when swapping to and from Galaxy/System View.",
+    "published_at": "2023-11-28T15:01:49Z",
+    "source_url": "https://store.steampowered.com/news/app/1622900/view/3897364481878070762"
+  },
+  {
+    "query_id": "E60-Q003",
+    "appid": "907650",
+    "game": "Stronghold: Warlords",
+    "quote": "Fixed a crash that could occur when weapon workshops were destroyed by fire",
+    "published_at": "2021-04-13T16:33:10Z",
+    "source_url": "https://store.steampowered.com/news/app/907650/view/3103518256951063143"
+  },
+  {
+    "query_id": "E60-Q004",
+    "appid": "921800",
+    "game": "Encased: A Sci-Fi Post-Apocalyptic RPG",
+    "quote": "Fixed freezes and problems when taking a number of perks,",
+    "published_at": "2020-08-21T14:37:55Z",
+    "source_url": "https://store.steampowered.com/news/app/921800/view/2739831657932635709"
+  },
+  {
+    "query_id": "E60-Q005",
+    "appid": "1293170",
+    "game": "BZZZT",
+    "quote": "Improved preloading system to eliminate FPS drops during the gameplay.",
+    "published_at": "2024-03-02T21:32:15Z",
+    "source_url": "https://store.steampowered.com/news/app/1293170/view/4139441932576659541"
+  },
+  {
+    "query_id": "E60-Q006",
+    "appid": "597820",
+    "game": "BIOMUTANT",
+    "quote": "\u25cf Fixed crash with AMD-based CPUs with built-in graphics.",
+    "published_at": "2021-06-01T21:29:19Z",
+    "source_url": "https://store.steampowered.com/news/app/597820/view/3033716901078398113"
+  },
+  {
+    "query_id": "E60-Q007",
+    "appid": "1844380",
+    "game": "Warhammer Age of Sigmar: Realms of Ruin",
+    "quote": "Fixed a Crash caused by killing the Troggoth too early in Chapter 1.",
+    "published_at": "2023-11-27T11:03:16Z",
+    "source_url": "https://store.steampowered.com/news/app/1844380/view/3862461584742578034"
+  },
+  {
+    "query_id": "E60-Q008",
+    "appid": "736820",
+    "game": "Knights of Honor II: Sovereign",
+    "quote": "\u2022\tFixes to invalid resolutions being loaded, leading to rare game crashes on start-up",
+    "published_at": "2022-12-09T16:20:32Z",
+    "source_url": "https://store.steampowered.com/news/app/736820/view/3638375952796765008"
+  },
+  {
+    "query_id": "E60-Q009",
+    "appid": "1963040",
+    "game": "The Lost Village",
+    "quote": "Fixed the bug causing illusion realm to freeze due to affixes",
+    "published_at": "2023-11-20T09:48:47Z",
+    "source_url": "https://store.steampowered.com/news/app/1963040/view/7423682540490397317"
+  },
+  {
+    "query_id": "E60-Q010",
+    "appid": "2223840",
+    "game": "The Casting of Frank Stone\u2122",
+    "quote": "Fixed an issue that could cause the game to crash when continuing from the beginning of Punch save point",
+    "published_at": "2024-09-04T17:48:55Z",
+    "source_url": "https://store.steampowered.com/news/app/2223840/view/4576308214470807512"
+  },
+  {
+    "query_id": "E60-Q011",
+    "appid": "1029550",
+    "game": "Torque Drift",
+    "quote": "- Fixed some performance issues occuring mid game when using the Guide Path",
+    "published_at": "2020-04-27T00:08:35Z",
+    "source_url": "https://store.steampowered.com/news/app/1029550/view/2219655121156256815"
+  },
+  {
+    "query_id": "E60-Q012",
+    "appid": "656240",
+    "game": "Heat",
+    "quote": "- Improved performance in areas with many chopped trees and bushes",
+    "published_at": "2019-02-01T20:58:10Z",
+    "source_url": "https://store.steampowered.com/news/app/656240/view/3928784047056610329"
+  },
+  {
+    "query_id": "E60-Q013",
+    "appid": "1656780",
+    "game": "Hero's Hour",
+    "quote": "Fixed a crash that happened when switching to a custom map while selecting starting hero for another map",
+    "published_at": "2022-03-04T16:59:04Z",
+    "source_url": "https://store.steampowered.com/news/app/1656780/view/3119310660764653514"
+  },
+  {
+    "query_id": "E60-Q014",
+    "appid": "1222730",
+    "game": "STAR WARS\u2122: Squadrons",
+    "quote": "Fixed an issue where the game crashed while transitioning into a match",
+    "published_at": "2020-10-15T14:33:31Z",
+    "source_url": "https://store.steampowered.com/news/app/1222730/view/2882826019099379641"
+  },
+  {
+    "query_id": "E60-Q015",
+    "appid": "557180",
+    "game": "League of Maidens\u00ae",
+    "quote": "16 - Fixed a bug that caused the game to crash when using Bat Swarm under certain conditions.",
+    "published_at": "2021-04-11T00:12:46Z",
+    "source_url": "https://store.steampowered.com/news/app/557180/view/3087755658245590765"
+  },
+  {
+    "query_id": "E60-Q016",
+    "appid": "1550710",
+    "game": "Warbox",
+    "quote": "Fixed a few performance issues in main menu",
+    "published_at": "2023-12-26T06:49:20Z",
+    "source_url": "https://store.steampowered.com/news/app/1550710/view/3776892014240322800"
+  },
+  {
+    "query_id": "E60-Q017",
+    "appid": "313120",
+    "game": "Stranded Deep",
+    "quote": "- Fixed game crash caused by player destroying a 'Raft Base' while standing on it.",
+    "published_at": "2021-11-23T01:20:20Z",
+    "source_url": "https://store.steampowered.com/news/app/313120/view/3129434247974955064"
+  },
+  {
+    "query_id": "E60-Q018",
+    "appid": "1402320",
+    "game": "Medal of Honor\u2122: Above and Beyond",
+    "quote": "\u2022 Fixed a rare crash that could trigger from switching party leaders in Multiplayer.",
+    "published_at": "2020-12-17T22:01:01Z",
+    "source_url": "https://store.steampowered.com/news/app/1402320/view/5126750336588042928"
+  },
+  {
+    "query_id": "E60-Q019",
+    "appid": "1692250",
+    "game": "F1\u00ae 22",
+    "quote": "Improved performance when companion screen is set to full screen[/*]",
+    "published_at": "2022-07-25T10:18:06Z",
+    "source_url": "https://store.steampowered.com/news/app/1692250/view/3387287522118560792"
+  },
+  {
+    "query_id": "E60-Q020",
+    "appid": "383120",
+    "game": "Empyrion - Galactic Survival",
+    "quote": "Fixed a crash that happened when opening the Control panel > stats window on some vessels in the Dark Faction scenario",
+    "published_at": "2024-02-08T16:34:43Z",
+    "source_url": "https://store.steampowered.com/news/app/383120/view/4044864437094097245"
+  },
+  {
+    "query_id": "E60-Q021",
+    "appid": "1485590",
+    "game": "ENDLESS Dungeon\u2122 - Definitive Edition",
+    "quote": "Fixed an issue where a crash can occur when player attempts to 'Quit and return to Main Menu' after Eriaudy introduction.",
+    "published_at": "2023-10-25T15:02:08Z",
+    "source_url": "https://store.steampowered.com/news/app/1485590/view/3708210847450333126"
+  },
+  {
+    "query_id": "E60-Q022",
+    "appid": "684450",
+    "game": "Surviving the Aftermath",
+    "quote": "Fixed an issue that caused the entire game to crash when attempting to scout a specific sector.",
+    "published_at": "2021-01-28T09:06:29Z",
+    "source_url": "https://store.steampowered.com/news/app/684450/view/3056224118603882189"
+  },
+  {
+    "query_id": "E60-Q023",
+    "appid": "1058650",
+    "game": "Beyond The Wire",
+    "quote": "- Fixed a crash when players got shot on HMGs",
+    "published_at": "2021-04-14T17:06:48Z",
+    "source_url": "https://store.steampowered.com/news/app/1058650/view/3032587195924405388"
+  },
+  {
+    "query_id": "E60-Q024",
+    "appid": "1128860",
+    "game": "Men of War II",
+    "quote": "Fixed a crash happening for some players after selection change",
+    "published_at": "2024-05-31T07:53:07Z",
+    "source_url": "https://store.steampowered.com/news/app/1128860/view/4183360268354548188"
+  },
+  {
+    "query_id": "E60-Q025",
+    "appid": "1189800",
+    "game": "Bleeding Edge",
+    "quote": "Fixed: an issue when\u202fcertain\u202fVO lines could cause the game to crash.",
+    "published_at": "2020-04-30T10:25:26Z",
+    "source_url": "https://store.steampowered.com/news/app/1189800/view/2209522655052236364"
+  },
+  {
+    "query_id": "E60-Q026",
+    "appid": "826630",
+    "game": "Iron Harvest",
+    "quote": "- Fixed issue that could lead to a freeze in a multiplayer match when using the Engineer repair ability.",
+    "published_at": "2020-08-07T18:08:18Z",
+    "source_url": "https://store.steampowered.com/news/app/826630/view/2760096678557164144"
+  },
+  {
+    "query_id": "E60-Q027",
+    "appid": "1261040",
+    "game": "Streamer Life Simulator",
+    "quote": "Fixed the bug where the game crashes after purchasing the dog that occurred with some players.",
+    "published_at": "2020-08-24T15:26:47Z",
+    "source_url": "https://store.steampowered.com/news/app/1261040/view/4575048786954284301"
+  },
+  {
+    "query_id": "E60-Q028",
+    "appid": "604540",
+    "game": "Empire of Sin",
+    "quote": "Occasional reports of the game freezing on a loading screen have been resolved, this was due to an error with a broken mission save",
+    "published_at": "2020-12-09T18:11:20Z",
+    "source_url": "https://store.steampowered.com/news/app/604540/view/2942503788146161500"
+  },
+  {
+    "query_id": "E60-Q029",
+    "appid": "1456940",
+    "game": "Level Zero: Extraction",
+    "quote": "Fixed an issue that caused fps drops during extensive pings sent by aliens;",
+    "published_at": "2024-09-27T10:12:31Z",
+    "source_url": "https://store.steampowered.com/news/app/1456940/view/4693403706385334941"
+  },
+  {
+    "query_id": "E60-Q030",
+    "appid": "1605220",
+    "game": "Dune: Spice Wars",
+    "quote": "Fixed crashes when loading a save",
+    "published_at": "2022-07-29T09:48:59Z",
+    "source_url": "https://store.steampowered.com/news/app/1605220/view/3407554354308648748"
+  },
+  {
+    "query_id": "E60-Q031",
+    "appid": "2321210",
+    "game": "Neon Echo",
+    "quote": "Fixed the error that with interacting when NPCs, some actions caused the game to crash;",
+    "published_at": "2023-04-21T16:42:17Z",
+    "source_url": "https://store.steampowered.com/news/app/2321210/view/3683424019785336892"
+  },
+  {
+    "query_id": "E60-Q032",
+    "appid": "1472660",
+    "game": "No Place Like Home",
+    "quote": "-fixed crashes caused by going to sleep after destroying some buildings",
+    "published_at": "2021-01-12T12:18:46Z",
+    "source_url": "https://store.steampowered.com/news/app/1472660/view/2966150223033331629"
+  },
+  {
+    "query_id": "E60-Q033",
+    "appid": "680420",
+    "game": "OUTRIDERS",
+    "quote": "Fixed the crash when completing the \"A Bad Day\" side quest",
+    "published_at": "2021-04-09T18:22:32Z",
+    "source_url": "https://store.steampowered.com/news/app/680420/view/3086629758335219404"
+  },
+  {
+    "query_id": "E60-Q034",
+    "appid": "269190",
+    "game": "Edge Of Eternity",
+    "quote": "Improved loading performances and reduced loading related stuttering during the first maps (intro, snow, warehouse, battlefield, elon village)",
+    "published_at": "2020-08-14T17:39:13Z",
+    "source_url": "https://store.steampowered.com/news/app/269190/view/3883745422463452063"
+  },
+  {
+    "query_id": "E60-Q035",
+    "appid": "1038250",
+    "game": "DIRT 5",
+    "quote": "* Fixed instances of game crashes occurring when attempting to sign into a profile already assigned to another controller/input",
+    "published_at": "2021-03-30T09:05:39Z",
+    "source_url": "https://store.steampowered.com/news/app/1038250/view/3031459393718811371"
+  },
+  {
+    "query_id": "E60-Q036",
+    "appid": "1258080",
+    "game": "Shop Titans",
+    "quote": "Fixed a crash related to advanced market search during Dragon Invasion.",
+    "published_at": "2022-09-07T15:00:01Z",
+    "source_url": "https://store.steampowered.com/news/app/1258080/view/3327618707380775779"
+  },
+  {
+    "query_id": "E60-Q037",
+    "appid": "1794960",
+    "game": "Sonic Origins",
+    "quote": "A new patch has been released today addresses game crashes when playing as Tails and implements additional bug fixes.",
+    "published_at": "2023-10-26T00:00:13Z",
+    "source_url": "https://store.steampowered.com/news/app/1794960/view/3714966246893959559"
+  },
+  {
+    "query_id": "E60-Q038",
+    "appid": "1159690",
+    "game": "Voidtrain",
+    "quote": "Fixed a crash with Rofleemo and building placement.",
+    "published_at": "2023-05-19T23:14:04Z",
+    "source_url": "https://store.steampowered.com/news/app/1159690/view/3705944461988567952"
+  },
+  {
+    "query_id": "E60-Q039",
+    "appid": "903950",
+    "game": "Last Oasis",
+    "quote": "-Fixed crash related to disconnecting while in a building screen action.",
+    "published_at": "2021-04-16T12:46:47Z",
+    "source_url": "https://store.steampowered.com/news/app/903950/view/4795746547292855413"
+  },
+  {
+    "query_id": "E60-Q040",
+    "appid": "606500",
+    "game": "HellSign",
+    "quote": "Also thanks for the reports in the performance thread, we were able to find and resolve a fill rate issue with shadowbeast, which optimized them by ~40%!",
+    "published_at": "2019-04-18T00:21:54Z",
+    "source_url": "https://store.steampowered.com/news/app/606500/view/4546903098697820149"
+  },
+  {
+    "query_id": "E60-Q041",
+    "appid": "1981610",
+    "game": "Wanted: Dead",
+    "quote": "Fixed an issue where players could experience crashes while playing advanced levels of the Ramen minigame.",
+    "published_at": "2023-12-20T17:01:56Z",
+    "source_url": "https://store.steampowered.com/news/app/1981610/view/3870345512571972876"
+  },
+  {
+    "query_id": "E60-Q042",
+    "appid": "566440",
+    "game": "Necromunda: Underhive Wars",
+    "quote": "(HIVE) Fixed a crash that could occur when trying to load corrupted Gang data.",
+    "published_at": "2020-10-01T15:05:57Z",
+    "source_url": "https://store.steampowered.com/news/app/566440/view/2882824752342789571"
+  },
+  {
+    "query_id": "E60-Q043",
+    "appid": "794260",
+    "game": "Outward Definitive Edition",
+    "quote": "Fixed performance issues due to lights on various imbue.",
+    "published_at": "2024-06-07T12:00:50Z",
+    "source_url": "https://store.steampowered.com/news/app/794260/view/4187864501492614690"
+  },
+  {
+    "query_id": "E60-Q044",
+    "appid": "1566690",
+    "game": "Outpost: Infinity Siege",
+    "quote": "Fixed a potential GPU crash caused by enabling AMD FSR.",
+    "published_at": "2024-03-30T19:29:37Z",
+    "source_url": "https://store.steampowered.com/news/app/1566690/view/4203620759361577208"
+  },
+  {
+    "query_id": "E60-Q045",
+    "appid": "1676840",
+    "game": "For The King II",
+    "quote": "Improved performance in the Corrupted Plains biome on lower spec machines.",
+    "published_at": "2024-07-17T17:14:56Z",
+    "source_url": "https://store.steampowered.com/news/app/1676840/view/6783067225513375037"
+  },
+  {
+    "query_id": "E60-Q046",
+    "appid": "625340",
+    "game": "XERA: Survival",
+    "quote": "Fixed an issue causing level loading screen to freeze on load",
+    "published_at": "2021-10-01T09:13:29Z",
+    "source_url": "https://store.steampowered.com/news/app/625340/view/2904249826501017033"
+  },
+  {
+    "query_id": "E60-Q047",
+    "appid": "1419160",
+    "game": "Souldiers",
+    "quote": "- Fixed Melian cutscene freeze in the Sunken Laboratory.",
+    "published_at": "2022-07-15T15:14:13Z",
+    "source_url": "https://store.steampowered.com/news/app/1419160/view/6020766858251965512"
+  },
+  {
+    "query_id": "E60-Q048",
+    "appid": "1519090",
+    "game": "Welcome to ParadiZe",
+    "quote": "[Fixed] \u2013 Various crashes at launch (more windows versions & nvidia drivers supported)",
+    "published_at": "2024-03-12T16:38:51Z",
+    "source_url": "https://store.steampowered.com/news/app/1519090/view/4137190765295709760"
+  },
+  {
+    "query_id": "E60-Q049",
+    "appid": "1260320",
+    "game": "Party Animals",
+    "quote": "Fixed the issue where the screen may freeze when typing and sending text messages in some languages",
+    "published_at": "2023-12-04T12:42:49Z",
+    "source_url": "https://store.steampowered.com/news/app/1260320/view/3874847209551513849"
+  },
+  {
+    "query_id": "E60-Q050",
+    "appid": "1359090",
+    "game": "Zero Hour",
+    "quote": "Fixed returning from server browser and joining match reduced performance during gameplay",
+    "published_at": "2022-10-21T16:46:25Z",
+    "source_url": "https://store.steampowered.com/news/app/1359090/view/3406436063668986967"
+  },
+  {
+    "query_id": "E60-Q051",
+    "appid": "1938010",
+    "game": "WILD HEARTS\u2122",
+    "quote": "Fixed an issue where the host\u2019s game would freeze and guest players would experience an infinite load when online co-op was disbanded at a specific timing.",
+    "published_at": "2023-03-10T12:57:22Z",
+    "source_url": "https://store.steampowered.com/news/app/1938010/view/3668783426282487846"
+  },
+  {
+    "query_id": "E60-Q052",
+    "appid": "2507980",
+    "game": "Meta Ghost: Breaking Show",
+    "quote": "-FIxed an issue that might cause crashes in Like room which locates in breaking show mode.",
+    "published_at": "2024-06-21T12:35:25Z",
+    "source_url": "https://store.steampowered.com/news/app/2507980/view/4204754268637014735"
+  },
+  {
+    "query_id": "E60-Q053",
+    "appid": "1635450",
+    "game": "Longvinter",
+    "quote": "Fixed the game crash issue when opening a Red Tackle Box without a key.",
+    "published_at": "2024-01-15T14:26:49Z",
+    "source_url": "https://store.steampowered.com/news/app/1635450/view/3977307906145406410"
+  },
+  {
+    "query_id": "E60-Q054",
+    "appid": "1611910",
+    "game": "Warhammer 40,000: Chaos Gate - Daemonhunters",
+    "quote": "Fixed an issue where the FPS would spike when units would make simultaneous movements.",
+    "published_at": "2022-05-12T14:02:07Z",
+    "source_url": "https://store.steampowered.com/news/app/1611910/view/4759753262637536753"
+  },
+  {
+    "query_id": "E60-Q055",
+    "appid": "424370",
+    "game": "Wolcen: Lords of Mayhem",
+    "quote": "Fixed overall performance issues happening when applying certain buffs or debuffs to the player character.",
+    "published_at": "2021-04-01T16:04:39Z",
+    "source_url": "https://store.steampowered.com/news/app/424370/view/3032584660752970207"
+  },
+  {
+    "query_id": "E60-Q056",
+    "appid": "1268590",
+    "game": "Millennia",
+    "quote": "Fixed an issue where camera movement when jumping to specific locations would sometimes cause a stutter and make clouds flicker.",
+    "published_at": "2024-04-03T14:00:16Z",
+    "source_url": "https://store.steampowered.com/news/app/1268590/view/4168718495664787162"
+  },
+  {
+    "query_id": "E60-Q057",
+    "appid": "1544020",
+    "game": "The Callisto Protocol\u2122",
+    "quote": "Fixed low frequency crash in the Tunnels level during the Two Head fight",
+    "published_at": "2023-01-20T04:30:42Z",
+    "source_url": "https://store.steampowered.com/news/app/1544020/view/3666527187712947652"
+  },
+  {
+    "query_id": "E60-Q058",
+    "appid": "1196090",
+    "game": "Scars Above",
+    "quote": "Fixed a random crash, that was caused by reconnecting a controller under certain conditions.",
+    "published_at": "2023-10-30T14:30:19Z",
+    "source_url": "https://store.steampowered.com/news/app/1196090/view/3743113744581483810"
+  },
+  {
+    "query_id": "E60-Q059",
+    "appid": "910830",
+    "game": "Rebel Galaxy Outlaw",
+    "quote": "*Fixed an issue in flight training where cycling stations from the map mode could result in a crash.",
+    "published_at": "2020-09-23T03:21:23Z",
+    "source_url": "https://store.steampowered.com/news/app/910830/view/2787122624544237882"
+  },
+  {
+    "query_id": "E60-Q060",
+    "appid": "427940",
+    "game": "Industries of Titan",
+    "quote": "Fixed a crash that occurred occasionally when changing auto-currency",
+    "published_at": "2021-07-08T18:52:47Z",
+    "source_url": "https://store.steampowered.com/news/app/427940/view/2996564740820960840"
+  }
+]

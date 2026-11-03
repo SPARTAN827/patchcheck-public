@@ -1,0 +1,158 @@
+{
+  "status": "conditional_exploratory_submitted_codes_not_independent_human_gold",
+  "known_secondhand_exclusion": {
+    "pair_id": "E60-7d1aa61d8cc4f8752b95",
+    "submitted_label": [
+      "yes",
+      "ongoing"
+    ],
+    "rule": "Remove only this known secondhand ID from target numerator; preserve record, label, rank, returned denominator and empty-slot convention. This is not a verified all-firsthand subset.",
+    "methods": [
+      {
+        "method": "bm25",
+        "known_secondhand_target_occurrences_excluded": 1,
+        "target_count_as_submitted": 2,
+        "target_count_excluding_known_secondhand": 1,
+        "fixed_slots_unchanged": 600,
+        "returned_unchanged": 600,
+        "yield_at10_excluding_known_secondhand": 0.0016666666666666668,
+        "label_and_same_issue_yes_count_unchanged": true
+      },
+      {
+        "method": "semantic",
+        "known_secondhand_target_occurrences_excluded": 0,
+        "target_count_as_submitted": 1,
+        "target_count_excluding_known_secondhand": 1,
+        "fixed_slots_unchanged": 600,
+        "returned_unchanged": 600,
+        "yield_at10_excluding_known_secondhand": 0.0016666666666666668,
+        "label_and_same_issue_yes_count_unchanged": true
+      },
+      {
+        "method": "rrf",
+        "known_secondhand_target_occurrences_excluded": 0,
+        "target_count_as_submitted": 1,
+        "target_count_excluding_known_secondhand": 1,
+        "fixed_slots_unchanged": 600,
+        "returned_unchanged": 600,
+        "yield_at10_excluding_known_secondhand": 0.0016666666666666668,
+        "label_and_same_issue_yes_count_unchanged": true
+      },
+      {
+        "method": "rrf_context",
+        "known_secondhand_target_occurrences_excluded": 0,
+        "target_count_as_submitted": 2,
+        "target_count_excluding_known_secondhand": 2,
+        "fixed_slots_unchanged": 600,
+        "returned_unchanged": 3,
+        "yield_at10_excluding_known_secondhand": 0.0033333333333333335,
+        "label_and_same_issue_yes_count_unchanged": true
+      }
+    ],
+    "primary_context_minus_rrf_unchanged": true
+  },
+  "row185_hypothetical_not_actual_relabel": {
+    "pair_id": "E60-50f55481a4f270c5f8c0",
+    "query_id": "E60-Q034",
+    "actual_label": [
+      "no",
+      "not_applicable"
+    ],
+    "membership": [
+      {
+        "query_id": "E60-Q034",
+        "appid": "269190",
+        "method": "bm25",
+        "record_id": "mend-v2-269190-r003165-5cac8563b817",
+        "rank": 3,
+        "case_id": "E60-50f55481a4f270c5f8c0"
+      },
+      {
+        "query_id": "E60-Q034",
+        "appid": "269190",
+        "method": "semantic",
+        "record_id": "mend-v2-269190-r003165-5cac8563b817",
+        "rank": 7,
+        "case_id": "E60-50f55481a4f270c5f8c0"
+      },
+      {
+        "query_id": "E60-Q034",
+        "appid": "269190",
+        "method": "rrf",
+        "record_id": "mend-v2-269190-r003165-5cac8563b817",
+        "rank": 3,
+        "case_id": "E60-50f55481a4f270c5f8c0"
+      }
+    ],
+    "scenario": "Treat this disputed no/not_applicable as unresolved potentially-target [0,1] solely for sensitivity; do not infer a submitted experience correction or modify source codes.",
+    "target_numerators_and_primary_point_test_bootstrap_unchanged": true,
+    "uncertain_counts_would_increase_by_one": [
+      "bm25",
+      "semantic",
+      "rrf"
+    ],
+    "unmatched_rrf_possible_target_reduces_lower_contrast_bound_by": 0.0016666666666666668,
+    "hypothetical_bounds": {
+      "experience_compatible": {
+        "count_difference_lower": -91,
+        "count_difference_upper": 2,
+        "fixed_display_slots_per_method": 600,
+        "mean_difference_lower": -0.15166666666666667,
+        "mean_difference_upper": 0.0033333333333333335,
+        "percentage_point_lower": -15.166666666666666,
+        "percentage_point_upper": 0.3333333333333333,
+        "shared_pair_count_cancelled": 1,
+        "not_confidence_interval": true
+      },
+      "historical_relaxed": {
+        "count_difference_lower": -94,
+        "count_difference_upper": 2,
+        "fixed_display_slots_per_method": 600,
+        "mean_difference_lower": -0.15666666666666668,
+        "mean_difference_upper": 0.0033333333333333335,
+        "percentage_point_lower": -15.666666666666666,
+        "percentage_point_upper": 0.3333333333333333,
+        "shared_pair_count_cancelled": 1,
+        "not_confidence_interval": true
+      },
+      "all_uncertain_maximum_relaxation": {
+        "count_difference_lower": -112,
+        "count_difference_upper": 2,
+        "fixed_display_slots_per_method": 600,
+        "mean_difference_lower": -0.18666666666666668,
+        "mean_difference_upper": 0.0033333333333333335,
+        "percentage_point_lower": -18.666666666666668,
+        "percentage_point_upper": 0.3333333333333333,
+        "shared_pair_count_cancelled": 1,
+        "not_confidence_interval": true
+      }
+    },
+    "leave_query_out": "Not run: retaining all games and widening the disputed-row bound avoids post-result deletion of Q034."
+  },
+  "row210_rationale_only": {
+    "pair_id": "E60-181549f930ba9499374a",
+    "submitted_label": [
+      "uncertain",
+      "ongoing"
+    ],
+    "membership": [
+      {
+        "query_id": "E60-Q040",
+        "appid": "606500",
+        "method": "semantic",
+        "record_id": "mend-v2-606500-r002041-246c55d34553",
+        "rank": 1,
+        "case_id": "E60-181549f930ba9499374a"
+      },
+      {
+        "query_id": "E60-Q040",
+        "appid": "606500",
+        "method": "rrf",
+        "record_id": "mend-v2-606500-r002041-246c55d34553",
+        "rank": 4,
+        "case_id": "E60-181549f930ba9499374a"
+      }
+    ],
+    "effect_of_rationale_only_correction": "No numerical effect; uncertainty and all label codes retained."
+  }
+}
